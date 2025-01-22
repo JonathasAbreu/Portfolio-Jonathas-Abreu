@@ -447,14 +447,13 @@ a .navbar-brand:hover {
 }
 
 .cardP img {
-    width: 100%; /* A imagem ocupará toda a largura do contêiner */
-    height:300px; /* A altura será ajustada proporcionalmente */
-    object-fit: cover; /* Isso faz com que a imagem cubra todo o espaço sem distorcer, cortando as partes que ultrapassam */
+    width: 100%;
+    height:300px;
+    object-fit: cover;
 }
 /* Fim Projetos */
 
 /* Formação */
-
 .timeline-area .botaoCertificados {
     color: #000000;
     padding: 10px 25px;
@@ -472,7 +471,6 @@ a .navbar-brand:hover {
     transition: transform 0.5s ease;
     background: rgba(0, 0, 0, 0.24);
 }
-
 /* Fim formação */
 
 /* Entre em contato */
@@ -553,5 +551,4 @@ a .navbar-brand:hover {
     border-radius: 100%;
     color: #ffffff;
 }
-
 /* Fim footer */
