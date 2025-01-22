@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="description"
+      content="Portfolio do Desenvolvedor Jonathas Abreu"
+    />
+    <meta
+      name="keywords"
+      content="HTML, css, javascript, Landing Page, Bootstrap"
+    />
+    <meta name="author" content="Jonathas Abreu de Pontes" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Portfólio - Jonathas Abreu</title>
+  </head>
+
+  <body id="inicial" data-target="main-nav" data-spy="scroll">
+    <!-- Cabeçalho -->
+    <header class="header-main">
+      <nav
+        class="navbar navbar-expand-sm navbar-dark fixed-top menuMain"
+        id="main-nav">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <img src="img/Logo.png" alt="logo Jonathas Abreu" width="100" class="img-fluid"/></a>
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+          >
+            <span class="navbar-toggle-icon">
+              <i class="fas fa-ellipsis-v"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="#inicio" class="nav-link linkHover">Início</a>
+              </li>
+              <li class="nav-item">
+                <a href="#sobre" class="nav-link linkHover">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a href="#experiencia" class="nav-link linkHover"
+                  >Experiência</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#formacao" class="nav-link linkHover">Formação</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contato" class="nav-link linkHover">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="inicio" class="intro">
+        <p>Jonathas Abreu</p>
+        <div class="intro2">
+          <div class="typewriter">Desenvolvedor Full-Stack</div>
+        </div>
+        <ul>
+          <li>
+            <a href="https://github.com/JonathasAbreu" target="_blank"><i class="fab fa-github"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/jonathas-abreu/" target="_blank""><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="https://wa.me/5527981680206" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </li>
+          <li>
+            <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank"><i class="fa fa-envelope"></i></a>
+          </li>
+        </ul>
+        <a href="img/Jonathas-abreu.pdf" target="_blank" class="curriculoBox">Ver Currículo</a>
+      </div>
+      <div class="setaBox d-flex justify-content-center" >
+        <a href="#sobre" class="botaoMouse">&or;</a>
+      </div>
+    </header>
+    <!-- Fim cabeçalho -->
+
+    <!-- Sobre -->
+    <section id="sobre" class="sobre">
+      <div class="container">
+        <div class="row">
+          <div class="introSobre">
+            <h1><strong>Sobre</strong> mim</h1>
+            <img src="img/Divisoria.png" width="100" alt="divisória" />
+            <p>
+              Além da programação, adoro jogar basquete, aproveitar o fim de semana com a família, ler livros, tocar violão e teclado, o que me ajuda a manter a mente criativa e a encontrar novas soluções para os problemas do dia a dia.
+            </p>
+          </div>
+
+          <div class="foto">
+            <img src="img/Perfil.PNG" class="img-fluid perfil-img" width="200" alt="imagem perfil"/>
+            <h1>Olá, <strong>Sou Jonathas Abreu</strong></h1>
+
+            <div>
+              <p class="text-center">
+                <strong>
+                Desenvolvedor &nbsp;&nbsp;
+                <img src="img/Circle.svg" alt="circulo" width="5" />
+                &nbsp;&nbsp; Analista
+              </strong>
+              </p>
+            </div>
+
+            <div class="introMe">
+              <p>
+                Desenvolvedor apaixonado por criar soluções inovadoras que simplificam a vida das pessoas. Com formação em Análise e Desenvolvimento de Sistemas pela FAESA e experiência em diversos projetos pessoais, busco desafios em projetos que envolvam aplicações escaláveis. Sou autodidata, sempre atualizado com as últimas tecnologias e comprometido com a entrega de código limpo e eficiente.
+              </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Habilidades -->
+          <div class="row mt-5">
+            <!-- Hab -->
+            <div class="col-md-6 mb-5">
+              <div class="titlePercent d-flex justify-content-between">
+                <div class="titleP">C#</div>
+                <div class="percent">
+                  <img src="img/Csharp.PNG" alt="imagem csharp" width="25" />
+                  73%
+                </div>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 73%"
+                  aria-valuenow="73"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <!-- Fim Hab -->
+            <!-- Hab -->
+            <div class="col-md-6 mb-5">
+              <div class="titlePercent d-flex justify-content-between">
+                <div class="titleP">.NET</div>
+                <div class="percent">
+                  <img src="img/Dotnet.PNG" alt="imagem dotnet" width="25" />
+                  73%
+                </div>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 73%"
+                  aria-valuenow="73"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <!-- Fim Hab -->
+            <!-- Hab -->
+            <div class="col-md-6 mb-5">
+              <div class="titlePercent d-flex justify-content-between">
+                <div class="titleP">JavaScript</div>
+                <div class="percent">
+                  <img
+                    src="img/JavaScript.PNG"
+                    alt="imagem javascript"
+                    width="25"
+                  />
+                  65%
+                </div>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 65%"
+                  aria-valuenow="65"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <!-- Fim Hab -->
+            <!-- Hab -->
+            <div class="col-md-6 mb-5">
+              <div class="titlePercent d-flex justify-content-between">
+                <div class="titleP">SQL</div>
+                <div class="percent">
+                  <img src="img/Sql.PNG" alt="imagem sql" width="18" /> 65%
+                </div>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 65%"
+                  aria-valuenow="65"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <!-- Fim Hab -->
+            <!-- Hab -->
+            <div class="col-md-6 mb-5">
+              <div class="titlePercent d-flex justify-content-between">
+                <div class="titleP">HTML</div>
+                <div class="percent">
+                  <img src="img/Html.PNG" alt="imagem html" width="25" /> 73%
+                </div>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 73%"
+                  aria-valuenow="73"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <!-- Fim Hab -->
+            <!-- Hab -->
+            <div class="col-md-6 mb-5">
+              <div class="titlePercent d-flex justify-content-between">
+                <div class="titleP">CSS</div>
+                <div class="percent">
+                  <img src="img/Css.PNG" alt="imagem css" width="18" /> 72%
+                </div>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 72%"
+                  aria-valuenow="72"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <!-- Fim Hab -->
+            <!-- Hab -->
+            <div class="col-md-6 mb-5">
+              <div class="titlePercent d-flex justify-content-between">
+                <div class="titleP">Testes Integrados e Unitários</div>
+                <div class="percent">
+                  <img src="img/Testes.PNG" alt="imagem testes" width="25" />
+                  63%
+                </div>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 63%"
+                  aria-valuenow="63"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <!-- Fim Hab -->
+            <!-- Hab -->
+            <div class="col-md-6 mb-5">
+              <div class="titlePercent d-flex justify-content-between">
+                <div class="titleP">Entity Framework</div>
+                <div class="percent">
+                  <img src="img/Entity.PNG" alt="imagem entity" width="25" />
+                  67%
+                </div>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 67%"
+                  aria-valuenow="67"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <!-- Fim Hab -->
+             <!-- Hab -->
+            <div class="col-md-6 mb-5">
+              <div class="titlePercent d-flex justify-content-between">
+                <div class="titleP">Metodologias Ágeis</div>
+                <div class="percent">
+                  <img src="img/Metodologia-agil.png" alt="imagem entity" width="25" />
+                  83%
+                </div>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 83%"
+                  aria-valuenow="83"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <!-- Fim Hab -->
+             <!-- Hab -->
+            <div class="col-md-6 mb-5">
+              <div class="titlePercent d-flex justify-content-between">
+                <div class="titleP">Bootstrap</div>
+                <div class="percent">
+                  <img src="img/Bootstrap.png" alt="imagem entity" width="25" />
+                  71%
+                </div>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 71%"
+                  aria-valuenow="71"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <!-- Fim Hab -->
+          </div>
+        </div>
+        <!-- Fim Habilidades -->
+      </div>
+    </section>
+    <!-- Fim sobre -->
+
+    <!-- História -->
+    <section id="tempoTrabalho" class="tempoTrabalho d-flex align-items-center row-hl">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 boxTrabalho">
+            <div class="cardTrabalho">
+              <i class="far fa-user text-white"></i>
+              <p class="pPrimeiro">30 anos</p>
+              <p class="pSecond">De muita história</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 boxTrabalho">
+            <div class="cardTrabalho">
+              <i class="far fa-clipboard text-white"></i>
+              <p class="pPrimeiro">14 anos</p>
+              <p class="pSecond">No mercado de trabalho</p>
+            </div>
+          </div>
+          <div class="col-md-4 boxTrabalho">
+            <div class="cardTrabalho">
+              <i class="fas fa-suitcase text-white"></i>
+              <p class="pPrimeiro">3 anos</p>
+              <p class="pSecond">Codando</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fim história -->
+
+    <!-- Experiência -->
+    <section id="experiencia" class="experiencia">
+      <div class="container">
+        <div class="row">
+          <div class="introSobre">
+            <h1>Minhas <strong>Experiências</strong></h1>
+            <img src="img/Divisoria.png" width="100" alt="divisória" />
+            <p class="experiP">
+              Profissional em transição de carreira, buscando novos desafios no mundo da programação.
+            </p>
+          </div>
+
+          <!-- Timeline -->
+          <div class="timeline-area">
+            <div>
+              <h2>Jul/2022 - Atual &nbsp|&nbsp 2 anos 7 meses</h2>
+              <h3>Autoglass - Brasil</h3>
+              <h4>Analista de Sinistro 3</h4>
+              <ul>
+                <li>Recepcionar e acompanhar os chamados de nível 3 na fila de atendimento
+                </li>
+                <li>Posicionar o cliente sobre o andamento do chamado
+                </li>
+                <li>Cotação, negociação e compra de peças automotivas
+                </li>
+                <li>Acompanhamento do SLA do atendimento
+                </li>
+                <li>Análise técnica de vistorias dos atendimentos
+                </li>
+                <li>Identificar possíveis fraudes ou irregularidades nos chamados
+                </li>
+                <li>Garantir que os atendimentos estejam em conformidade com as políticas internas e regulações legais</li>
+              </ul>
+            </div>
+            <div>
+              <h2>Set/2021 - Jul/2022 &nbsp|&nbsp 11 meses</h2>
+              <h3>Autoglass - Brasil</h3>
+              <h4>Analista de Sinistro 2</h4>
+              <ul>
+                <li>Recepcionar e acompanhar os chamados de nível 2 na fila de atendimento
+                </li>
+                <li>Posicionar o cliente sobre o andamento do chamado
+                </li>
+                <li>Cotação, negociação e compra de peças automotivas
+                </li>
+                <li>Acompanhamento do SLA do atendimento
+                </li>
+                <li>Análise técnica de vistorias dos atendimentos
+                </li>
+                <li>Identificar possíveis fraudes ou irregularidades nos chamados
+                </li>
+                <li>Garantir que os atendimentos estejam em conformidade com as políticas internas e regulações legais</li>
+              </ul>
+            </div>
+            <div>
+              <h2>Jun/2021 - Set/2021 &nbsp|&nbsp 4 meses</h2>
+              <h3>Autoglass - Brasil</h3>
+              <h4>Analista de Novos Produtos</h4>
+              <ul>
+                <li>Recepcionar e acompanhar os chamados de nível 2 na fila de atendimento
+                </li>
+                <li>Posicionar o cliente sobre o andamento do chamado
+                </li>
+                <li>Cotação e negociação de mão de obra para conserto da funilaria dos veículos segurados
+                </li>
+                <li>Acompanhamento do SLA do atendimento
+                </li>
+                <li>Análise técnica de vistorias dos atendimentos
+                </li>
+                <li>Identificar possíveis fraudes ou irregularidades nos chamados
+                </li>
+                <li>Garantir que os atendimentos estejam em conformidade com as políticas internas e regulações legais
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2>Jan/2021 - Jun/2021 &nbsp|&nbsp 6 meses</h2>
+              <h3>Autoglass - Brasil</h3>
+              <h4>Analista de Qualidade</h4>
+              <ul>
+                <li>Converter reclamações de atendimento em satisfação do cliente
+                </li>
+                <li>Identificação e tratativa de tentativas de fraudes nas reclamações
+                </li>
+                <li>Cotação, negociação e compra de peças automotivas após validação da procedencia da reclamação recebida
+                </li>
+                <li>Acompanhamento do SLA do atendimento em cada etapa do processo de tratativa da reclamação
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2>Jul/2019 - Jan/2021 &nbsp|&nbsp 1 ano 4 meses</h2>
+              <h3>Autoglass - Brasil</h3>
+              <h4>Assistente Administrativo - Qualidade</h4>
+              <ul>
+                <li>Identificar a criticidade da reclamação e direcionar a tratativa para a equipe correspondente
+                </li>
+                <li>Tratar reclamações de processo ou operacionais das Cias de Seguro
+                </li>
+                <li>Manter as Cias de Seguro atualizadas sobre o andamento das tratativas das reclamações
+                </li>
+                <li>Investigar o caso junto às equipes responsáveis (técnicos, atendimento, logística, analistas) para entender o que causou a insatisfação
+                </li>
+                <li>Priorizar e monitorar as reclamações para garantir resolução dentro dos prazos estabelecidos
+                </li>
+                <li>Fornecer relatórios detalhados sobre cada caso, explicando as ações corretivas tomadas e os planos de prevenção para evitar ocorrências semelhantes
+                </li>
+                <li>Verificar se a solução aplicada atendeu aos padrões esperados pela seguradora e pelo cliente final
+                </li>
+                <li>Posicionar o cliente sobre o andamento da reclamação e a solução do caso
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2>Mar/2017 - Jul/2019 &nbsp|&nbsp 2 ano 5 meses</h2>
+              <h3>Autoglass - Brasil</h3>
+              <h4>Auxiliar Administrativo</h4>
+              <ul>
+                <li>Recepcionar as solicitações dos clientes de sinistro e do SAC da Cia de Seguros;
+                </li>
+                <li>Analisar e gerenciar o processo de recebimento de documentação para confirmação da abertura do atendimento;
+                </li>
+                <li>Esclarecer dúvidas de processo e documentações necessárias para atendimento
+                </li>
+                <li>Resolver as questões de forma rápida e eficiente, como fornecimento de informações ou esclarecimento de dúvidas
+                </li>
+                <li>Encaminhar os chamados para os setores responsáveis, quando não é possível solucionar de imediato
+                </li>
+                <li>Garantir que o tempo de resposta e a solução do chamado respeitem o SLA estabelecidos por Lei
+                </li>
+                <li>Auxílio aos agentes de atendimento que estavam em ligação com os clientes
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2>Nov/2015 - Mar/2017 &nbsp|&nbsp 1 ano 5 meses</h2>
+              <h3>Autoglass - Brasil</h3>
+              <h4>Agente de Call Center</h4>
+              <ul>
+                <li>Recepcionar ligações dos clientes de seguro</li>
+                <li>Abrir chamado para atendimento da demanda</li>
+                <li>Direcionar o atendimento para execução</li>
+                <li>Esclarecer dúvidas sobre produtos, serviços e processos</li>
+                <li>Fornecer informações detalhadas sobre status do atendimento, entregas de peças, liberação de serviços ou outras informações</li>
+                <li>Registrar e documentar todas as interações com os clientes no sistema de atendimento</li>
+                <li>Encaminhar as solicitações para as equipes responsáveis quando não for possível resolver imediatamente</li>
+                <li>Empatia, escuta ativa e capacidade de lidar com situações sensíveis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <a href="img/Jonathas-abreu.pdf" target="_blank" class="verMais">Ver Mais</a>
+      </div>
+    </section>
+    <!-- Fim experiência -->
+
+    <!-- Projetos -->
+    <section id="projetos" class="projetos">
+      <div class="container">
+        <div class="row">
+          <div class="introSobre">
+            <h1><strong>Projetos</strong></h1>
+            <img src="img/Divisoria.png" width="100" alt="divisória" />
+          </div>
+          <div class="col-6">
+            <div class="card cardP">
+              <img src="img/Landing-page-jonathas-abreu.PNG" alt="landing page jonathas abreu"/>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card cardP">
+              <img src="img/Landing-page-suaart-em-planejados.JPG" alt="landing page suaart"/>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card cardP">
+              <img src="img/Lista-de-tarefas.JPG" alt="lista de tarefas"/>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card cardP">
+              <img src="img/Calculadora-java-swing.JPG" alt="calculadora em java"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fim Projetos -->
+
+    <!-- Idioma -->
+    <section id="tempoTrabalho" class="tempoTrabalho d-flex align-items-center row-hl">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 boxTrabalho">
+            <div class="cardTrabalho">
+              <p class="pPrimeiro"><strong>Português</strong></p>
+              <p class="pSegundo">Comunicação nativa</p>
+              <p class="pSegundo">Leitura nativa</p>
+              <p class="pSegundo">Escrita nativa</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 boxTrabalho">
+            <div class="cardTrabalho">
+              <p class="pPrimeiro"><strong>Inglês</strong></p>
+              <p class="pSegundo">Comunicação básica</p>
+              <p class="pSegundo">Leitura Intermediária</p>
+              <p class="pSegundo">Escrita intermediária</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fim idioma -->
+
+    <!-- Formação -->
+    <section id="formacao" class="experiencia">
+      <div class="container">
+        <div class="row">
+          <div class="introSobre">
+            <h1>Minha <strong>Formação e Especialização</strong></h1>
+            <img src="images/divisoria1.png" width="100" alt="" srcset="" />
+            <p class="experiP">
+              Formado em ADS e com vários cursos feitos pelas plataformas da DIO, Alura, Coursera, Udemy e Balta.
+            </p>
+          </div>
+
+          <div class="timeline-area">
+            <div>
+              <h2>Desde 2022</h2>
+              <h3>DIO | Alura | Coursera | Udemy | Balta</h3>
+              <h4>Especializações</h4>
+              <p>
+                Para ter acesso a todas as especializações clique abaixo. <br>
+                <a href="https://www.linkedin.com/in/jonathas-abreu/details/certifications/" class="botaoCertificados" target="_blank">Certificados</a>               
+              </p>
+            </div>          
+            <div>
+              <h2>2022 - 2024</h2>
+              <h3>FAESA</h3>
+              <h4>Análise e Desenvolvimento de Sistemas</h4>
+              <p>
+                O curso me ajudou a ser um profissional capacitado para desenvolver, implementar e gerenciar sistemas computacionais, além de proporcionar uma sólida base para atuar em diversas áreas da tecnologia da informação. Ao longo do curso, aprendi tanto os aspectos teóricos quanto práticos da área de desenvolvimento de software, além de habilidades técnicas para lidar com desafios do mercado de TI.
+              </p>
+            </div>            
+            <div>
+              <h2>2008 - 2010</h2>
+              <h3>UP</h3>
+              <h4>Gestão Empresarial</h4>
+              <p>
+                O curso me capacitou para atuar em funções de apoio à gestão e administração de empresas. Ele aborda disciplinas que preparam os alunos para atuar no planejamento, organização, direção e controle das operações empresariais. Aprendi a lidar com os processos internos das organizações, otimizar recursos e implementar estratégias que visam o crescimento e a sustentabilidade do negócio.
+              </p>
+            </div>          
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fim formacao -->
+
+    <!-- Frase -->
+    <section id="tempoTrabalho" class="tempoTrabalho d-flex align-items-center row-hl">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 boxTrabalho">
+            <div class="cardFrase">
+              <p>
+                "A tecnologia é uma extensão de nós mesmos."
+              </p>
+              <small>- Marshall McLuhan</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fim frase -->
+
+    <!-- Entre em contato -->
+    <section id="contato" class="conversar">
+      <div class="container">
+        <div class="row">
+          <div class="introSobre">
+            <h1>Entre em <strong> Contato</strong></h1>
+            <img src="images/divisoria1.png" width="100" alt="" srcset="" />
+            <p class="conversarP">
+              Para mais detalhes sobre as minhas Hard skills e Soft skills, entre em contato que ficarei feliz em conversar com você.
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <div class="cardC">
+              <i class="fas fa-mobile-alt"></i>
+              <p>WhatsApp</p>
+              <a href="tel:" target="_blank">+55 (27) 98168-0206</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="cardC">
+              <i class="fas fa-envelope"></i>
+              <p>Email</p>
+              <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">jonathasabreu.dev@gmail.com</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="cardC">
+              <i class="fas fa-mobile-alt"></i>
+              <p>Localização</p>
+              <a href="https://www.google.com.br/maps/place/Cariacica,+State+of+Esp%C3%ADrito+Santo,+29159-015/@-20.2635357,-40.4460187,13.75z/data=!4m6!3m5!1s0xb83b3bf41d4b8f:0xe4269e7cc5ef5abb!8m2!3d-20.2643105!4d-40.4203022!16s%2Fg%2F11bc651m9q?entry=ttu&g_ep=EgoyMDI1MDEyMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Cariacica, ES</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fim entre em contato -->
+
+    <!-- footer -->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row align-items-center row-hl">
+          <div class="col-6">
+            &COPY; 2025 Jonathas Abreu de Pontes.<br />
+          </div>
+          <div class="col-6">
+            <div class="redesSociaisFooter">
+              <ul>
+                <li>
+                  <a href="https://github.com/JonathasAbreu" target="_blank"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/jonathas-abreu/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </li>          
+                <li>
+                  <a href="https://wa.me/5527981680206" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Fim Footer -->
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#year").text(new Date().getFullYear());
+    </script>
+    <script>
+      $("body").scrollspy({ target: "#main-nav" });
+      $("#main-nav a").on("click", function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          const hash = this.hash;
+
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            900,
+            function () {
+              window.location.hash = hash;
+            }
+          );
+        }
+      });
+    </script>
+    <script>
+      document.querySelectorAll('.botaoMouse').forEach(function (botao) {
+    botao.addEventListener('click', function (event) {
+        event.preventDefault();
+        const targetID = botao.getAttribute('href');
+        const targetElement = document.querySelector(targetID);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth',
+            });
+        }
+    });
+});
+    </script>
+  </body>
+</html>
