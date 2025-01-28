@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+.entrada {
+    opacity: 00;
+    transform: translateY(50px);
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+    background-color:#fff;
+}
+
+.entrada.ativo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,10 +21,11 @@
 /* Header */
 .header-main {
     background: url('../img/background-header.jpg') !important;
-    background-position: bottom !important;
-    background-repeat: none;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover !important;
-    height: 62.5rem;
+    height: 100vh;
+    width: 100%;
 }
 
 #main-nav {
@@ -282,6 +295,25 @@ a .navbar-brand:hover {
     width: 100%;
 }
 
+.tempoTrabalhoIdioma {
+    background: url(../img/Bg-star.jpg) !important;
+    background-position: bottom !important;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    min-height: 18.75rem;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.tempoTrabalhoIdioma::before {
+    background-color: rgba(0, 0, 0, 0.666);
+    content: '';
+    display: block;
+    min-height: 18.75rem;
+    position: absolute;
+    width: 100%;
+}
+
 .boxTrabalho {
     padding: 1.25rem;
     color: white;
@@ -305,7 +337,7 @@ a .navbar-brand:hover {
 
 .cardTrabalho {
     padding: 1.25rem;
-    width: 70%;
+    width: 70% ;
     border: 0.06rem dotted white;
     margin: 0 auto;
     text-align: center;
@@ -427,17 +459,24 @@ a .navbar-brand:hover {
     text-align: center;
 }
 
+.introSobre p {
+    text-align: center;
+}
+
 .cardP {
     margin: 1rem;
     position: relative;
     width: 100%;
+    height: 300px;
     overflow: hidden;
+    border: none;
 }
 
 .cardP img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;    
 }
 
 .row {
@@ -445,18 +484,25 @@ a .navbar-brand:hover {
     flex-wrap: wrap;
 }
 
-.col-6 {
+.col-6 .col-4{
     flex: 0 0 50%;
     max-width: 50%;
     padding: 0.5rem;
 }
 
 @media (max-width: 960px) {
-    .col-6 {
+    .col-6, .col-4{
         flex: 0 0 100%;
         max-width: 100%;
     }
 }
+
+figcaption {
+    font-style: italic;
+    font-size: 14px;
+    color: #666;
+  }
+  
 /* Fim Projetos */
 
 /* Formação */
@@ -519,12 +565,22 @@ a .navbar-brand:hover {
 .cardC a {
     font-size: 0.8em !important;
 }
+
+.entrada {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 /* Fim entre em contato */
 
 /* footer */
 .footer {
     background: #343a40;
     color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .redesSociaisFooter {
@@ -558,3 +614,89 @@ a .navbar-brand:hover {
     color: #ffffff;
 }
 /* Fim footer */
+
+/* Estilo do modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 765px;
+}
+
+#modalImage {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev, .next {
+    opacity: 1;
+    visibility: visible;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    color: rgb(18, 125, 212);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
