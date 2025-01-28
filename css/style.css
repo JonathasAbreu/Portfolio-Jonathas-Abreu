@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +12,7 @@
     background-position: bottom !important;
     background-repeat: none;
     background-size: cover !important;
-    height: 1000px;
+    height: 62.5rem;
 }
 
 #main-nav {
@@ -22,7 +21,7 @@
 }
 
 .nav-hidden {
-    top: -100px;
+    top: -2.25rem;
 }
 
 .nav-visible {
@@ -70,7 +69,7 @@ a .navbar-brand:hover {
 }
 
 .intro p {
-    padding-top: 220px;
+    padding-top: 13.75rem;
     font-size: 2rem;
     margin: 0;
     color: white;
@@ -90,7 +89,7 @@ a .navbar-brand:hover {
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 4px solid #212121;
+    border-right: 0.25rem solid #212121;
     animation: cursor 1s step-start infinite, text 3.5s steps(18) alternate infinite;
     color: white;
     font-size: 2em;
@@ -116,13 +115,13 @@ a .navbar-brand:hover {
 /* Redes sociais */
 .intro ul {
     list-style: none;
-    margin: 35px 0;
+    margin: 2.18rem 0;
     padding: 0;
 }
 
 .intro ul li {
     display: inline;
-    margin: 5px;
+    margin: 0.31rem;
 }
 
 .intro ul li a {
@@ -134,11 +133,11 @@ a .navbar-brand:hover {
 /* Ver currículo */
 .curriculoBox {
     color: #ffffff;
-    padding: 10px 25px;
-    border: 1px solid #eaebeb;
+    padding: 0.62rem 1.56rem;
+    border: 0.06rem solid #eaebeb;
     background: transparent;
-    border-radius: 100px;
-    margin-top: 40px !important;
+    border-radius: 6.25rem;
+    margin-top: 2.5rem !important;
     text-decoration: none !important;
     display: inline-flex;
     width: 7.6%;
@@ -152,26 +151,13 @@ a .navbar-brand:hover {
     background: transparent;
 }
 
-.setaBox {
-    margin: 280px auto 0 auto;
-    text-align: center;
-}
-
-.botaoMouse {
-    color: white;
-    text-decoration: none !important;
-    border: 1px solid white;
-    height: 50px;
-    border-radius: 10px;
-    padding: 11px 8px;
-    transition: transform 0.5s ease, background 0.3s ease, color 0.3s ease;
-}
-
-.setaBox .botaoMouse:hover {
-    color: rgb(255, 255, 255);
-    background: transparent;
-    transform: scale(1.1);
-    transition: transform 0.5s ease;
+@media (max-width: 1200px) {
+    .curriculoBox{
+        flex: 0 0 100%;
+        max-width: 100%;
+        border-radius: 8px;
+        width: 4%;
+    }
 }
 /* Fim ver currículo */
 /* Fim header */
@@ -179,20 +165,20 @@ a .navbar-brand:hover {
 /* Sobre */
 .sobre {
     color: #212121;
-    padding: 80px 0;
+    padding: 5rem 0;
     text-align: center;
     font-family: 'Open Sans';
 }
 
 .introSobre {
-    margin: 0 auto 50px auto;
+    margin: 0 auto 3.12rem auto;
     width: 100%;
     text-align: center;
 }
 
 .introSobre h1 {
     font-size: 3em;
-    letter-spacing: -1px;
+    letter-spacing: -0.06rem;
     font-family: 'Rubik';
     font-weight: 100;
     text-align: center;
@@ -205,7 +191,7 @@ a .navbar-brand:hover {
     text-align: justify;
     color: #8e8e8e;
     width: 60%;
-    margin: 20px auto 40px auto;
+    margin: 1.25rem auto 2.5rem auto;
 }
 
 /* Foto */
@@ -214,15 +200,15 @@ a .navbar-brand:hover {
 }
 
 .foto h1 {
-    margin-top: 25px;
+    margin-top: 1.56rem;
     font-size: 3em;
-    letter-spacing: -2px;
+    letter-spacing: -0.12rem;
     font-family: 'Rubik';
     font-weight: 100;
 }
 
 .foto p {
-    margin: 5px auto 0 auto;
+    margin: 0.31rem auto 0 auto;
     font-size: 1em;
     text-align: justify;
     font-family: 'Open Sans';
@@ -236,8 +222,8 @@ a .navbar-brand:hover {
 }
 
 .foto img.perfil-img {
-    width: 200px;
-    height: 200px;
+    width: 12.5rem;
+    height: 12.5rem;
     border-radius: 50%;
     object-fit: cover;
     background-color: #e2dede;
@@ -246,12 +232,12 @@ a .navbar-brand:hover {
 
 /* Habilidades */
 .progress {
-    height: 4px !important;
+    height: 0.25rem !important;
 }
 
 .progress-bar {
     background-color: #212121;
-    height: 4px;
+    height: 0.25rem;
 }
 
 .litlePercent {
@@ -283,7 +269,7 @@ a .navbar-brand:hover {
     background-position: bottom !important;
     background-repeat: no-repeat;
     background-size: cover !important;
-    min-height: 300px;
+    min-height: 18.75rem;
     display: flex;
 }
 
@@ -291,26 +277,26 @@ a .navbar-brand:hover {
     background-color: rgba(0, 0, 0, 0.666);
     content: '';
     display: block;
-    min-height: 300px;
+    min-height: 18.75rem;
     position: absolute;
     width: 100%;
 }
 
 .boxTrabalho {
-    padding: 20px;
+    padding: 1.25rem;
     color: white;
     justify-content: center;
     display: flex;
 }
 
 .boxTrabalho .cardFrase p{
-    font-size: 30px;    
+    font-size: 1.87rem;    
 }
 
 .boxTrabalho .cardFrase small{
     display: flex;
     justify-content: end;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .boxTrabalho i {
@@ -318,47 +304,46 @@ a .navbar-brand:hover {
 }
 
 .cardTrabalho {
-    padding: 20px;
+    padding: 1.25rem;
     width: 70%;
-    border: 1px dotted white;
+    border: 0.06rem dotted white;
     margin: 0 auto;
     text-align: center;
     border: none;
 }
 
 .cardTrabalho i {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    margin-bottom: 0.62rem;
+    padding-bottom: 0.62rem;
 }
 
 .pPrimeiro {
     font-size: 2em !important;
     color: #ffffff;
     font-family: 'Rubik';
-    line-height: 12px;    
+    line-height: 0.75rem;    
 }
 
 .pSecond {
     font-size: 1em !important;
     color: #ffffff;
     font-family: 'Open Sans';
-    line-height: 10px;
-    /* margin-top: 50px; */
+    line-height: 0.62rem;
 }
 
 .pSegundo {
     font-size: 1em !important;
     color: #ffffff;
     font-family: 'Open Sans';
-    line-height: 10px;
-    margin-top: 50px;
+    line-height: 0.62rem;
+    margin-top: 3.12rem;
 }
 /* Fim História */
 
 /* Experiência */
 .experiencia {
     color: #212121;
-    padding: 80px 0;
+    padding: 5rem 0;
     text-align: center;
     font-family: 'Open Sans';
 }
@@ -366,63 +351,63 @@ a .navbar-brand:hover {
 .timeline-area {
     margin: 0 auto !important;
     width: 70% !important;
-    border-left: 1px solid #d9d9d9;
-    margin-top: 50px !important;
-    padding: 30px 20px 30px 30px;
+    border-left: 0.06rem solid #d9d9d9;
+    margin-top: 3.12rem !important;
+    padding: 1.87rem 1.25rem 1.87rem 1.87rem;
 }
 
 .timeline-area div {
     background: #f8f9fa;
     border: 1px solid #eaebeb;
-    border-radius: 10px;
+    border-radius: 0.62rem;
     text-align: left;
-    padding: 30px;
-    margin-bottom: 20px;
+    padding: 1.87rem;
+    margin-bottom: 1.25rem;
 }
 
 .timeline-area div h2 {
     font-size: 1.2em;
     font-family: 'Rubik';
     font-weight: 400;
-    letter-spacing: -1px;
+    letter-spacing: -0.06rem;
 }
 
 .timeline-area div h3 {
     font-size: 1.4em;
     font-family: 'Open Sans';
     font-weight: 300;
-    letter-spacing: 0px;
-    line-height: 14px;
+    letter-spacing: 0rem;
+    line-height: 0.87rem;
 }
 
 .timeline-area div h4 {
     font-size: 0.675em;
     font-family: 'Open Sans';
     font-weight: 400;
-    letter-spacing: 0px;
-    margin-left: 10px;
-    line-height: 10px;
+    letter-spacing: 0rem;
+    margin-left: 0.62rem;
+    line-height: 0.62rem;
 }
 
 .timeline-area div:before {
     content: '';
     display: block;
-    width: 15px;
-    height: 15px;
+    width: 0.93rem;
+    height: 0.93rem;
     border-radius: 50%;
     background: #1a1716;
     position: relative;
-    top: 18px;
-    left: -69px;
+    top: 1.12rem;
+    left: -4.31rem;
 }
 
 .verMais {
     color: #000000;
-    padding: 10px 25px;
+    padding: 0.62rem 1.56rem;
     border: 1px solid #eaebeb;
     background: #ffffff;
-    border-radius: 100px;
-    margin-top: 40px !important;
+    border-radius: 6.25rem;
+    margin-top: 2.5rem !important;
     text-decoration: none !important;
     display: inline-block;
 }
@@ -438,29 +423,50 @@ a .navbar-brand:hover {
 /* Projetos */
 .projetos {
     background: #f8f9fa;
-    padding: 80px 0;
+    padding: 5rem 0;
     text-align: center;
 }
 
 .cardP {
-    margin: 20px;
+    margin: 1rem;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .cardP img {
     width: 100%;
-    height:300px;
+    height: 100%;
     object-fit: cover;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0.5rem;
+}
+
+@media (max-width: 960px) {
+    .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 /* Fim Projetos */
 
 /* Formação */
 .timeline-area .botaoCertificados {
     color: #000000;
-    padding: 10px 25px;
-    border: 1px solid #eaebeb;
+    padding: 0.62rem 1.56rem;
+    border: 0.06rem solid #eaebeb;
     background: #ffffff;
-    border-radius: 100px;
-    margin-top: 40px !important;
+    border-radius: 6.25rem;
+    margin-top: 2.5rem !important;
     text-decoration: none !important;
     display: inline-block;
 }
@@ -476,20 +482,20 @@ a .navbar-brand:hover {
 /* Entre em contato */
 .conversar {
     background: #ffffff;
-    padding: 80px 0;
+    padding: 5rem 0;
     text-align: center;
 }
 
 .conversar h1 {
     font-size: 3em;
-    letter-spacing: -1px;
+    letter-spacing: -0.06rem;
     font-family: 'Rubik';
     font-weight: 100;
 }
 
 .conversarP {
     width: 60% !important;
-    margin: 10px auto 50px auto !important;
+    margin: 0.62rem auto 3.12rem auto !important;
     display: block;
     text-align: center;
 }
@@ -502,7 +508,7 @@ a .navbar-brand:hover {
 
 .cardC i {
     font-size: 2em;
-    margin-bottom: 10px;
+    margin-bottom: 0.62rem;
 }
 
 .cardC p {
@@ -523,7 +529,7 @@ a .navbar-brand:hover {
 
 .redesSociaisFooter {
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .redesSociaisFooter ul {
@@ -535,7 +541,7 @@ a .navbar-brand:hover {
 
 .redesSociaisFooter ul li {
     display: inline;
-    margin: 3px;
+    margin: 0.18rem;
     text-align: center;
 }
 
@@ -546,8 +552,8 @@ a .navbar-brand:hover {
 
 .redesSociaisFooter ul li a i {
     font-size: 1.2em;
-    border: 2px solid #8e8e8e;
-    padding: 10px;
+    border: 0.12rem solid #8e8e8e;
+    padding: 0.62rem;
     border-radius: 100%;
     color: #ffffff;
 }
