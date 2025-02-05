@@ -56,16 +56,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    let closeButton = document.querySelector(".close");
-    if (closeButton) {
-        closeButton.onclick = function() {
-            navbar.classList.remove('hidden');
-            modal.style.display = "none";
-        };
-    } else {
-        console.error("Elemento '.close' não encontrado!");
-    }
-
     function changeImage(direction) {
         currentIndex += direction;
         
