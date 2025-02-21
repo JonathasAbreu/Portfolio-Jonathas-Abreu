@@ -89,6 +89,3 @@ window.onclick = function(event) {
         navbar.classList.remove('hidden');  // Remove a classe para mostrar a navbar
         modal.style.display = "none";
     }}
-
-
-    
