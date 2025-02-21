@@ -700,3 +700,37 @@ figcaption {
     display: none;
 }
 
+.formcontato form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0rem 14rem;
+    border: 2px solid rgb(160, 156, 156);
+    border-radius: 2rem;    
+}
+
+.formcontato form label {
+    font-family: 'Arial';
+}
+
+.formcontato form input, textarea {
+    width: 70%;
+    padding: 0.62rem;
+    margin: 0.62rem 0;
+    border: 0.06rem solid rgb(119, 118, 118);
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.formcontato form textarea {
+    display: flex;
+    width: 90%;
+    height: 50%;
+    padding: 0.62rem;
+    margin: 0.62rem 0;
+    border: 0.06rem solid rgb(119, 118, 118);
+    border-radius: 1rem;
+    text-align: center;
+}
