@@ -28,7 +28,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Esperiências / Projetos</title>
+    <title>Experiências / Projetos</title>
   </head>
   <body class="entrada">
     <!-- Cabeçalho -->
@@ -77,6 +77,89 @@
       </nav>
     </header>
     <!-- Fim cabeçalho -->
+
+     <!-- Projetos -->
+     <section id="projetos" class="projetos">
+      <div class="container">
+        <div class="row">
+          <div class="introSobre">
+            <h1><strong>Projetos</strong></h1>
+            <img src="img/Divisoria.png" width="100" alt="divisória" />
+            <p>Clique na imagem para visualizar</p>
+          </div>
+          <div class="col-4">
+            <div class="card cardP">
+              <img
+                src="img/Portfolio-jonathas-abreu.PNG"
+                class="gallery-img"
+                alt="landing page jonathas abreu"
+                data-index="0"
+              />
+              <figcaption>Portfólio | Jonathas Abreu</figcaption>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card cardP">
+              <img
+                src="img/Landing-page-suaart-em-planejados.JPG"
+                class="gallery-img"
+                alt="landing page suaart"
+                data-index="1"
+              />
+              <figcaption>Landing page | SuaArt Em Planejados</figcaption>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card cardP">
+              <img
+                src="img/Calculadora-java-swing.JPG"
+                class="gallery-img"
+                alt="calculadora em java"
+                data-index="3"
+              />
+              <figcaption class="legend-img">
+                Calculadora Em Java Com Swing
+              </figcaption>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card cardP">
+              <img
+                src="img/Lista-de-tarefas.JPG"
+                class="gallery-img"
+                alt="lista de tarefas"
+                data-index="2"
+              />
+              <figcaption>Lista De Tarefas</figcaption>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card cardP">
+              <img
+                src="img/Sorteador-amigo-secreto.JPG"
+                class="gallery-img"
+                alt="sorteador smigo secreto"
+                data-index="4"
+              />
+              <figcaption>Sorteador Amigo Secreto</figcaption>
+            </div>
+          </div>
+        </div>
+        <div id="imageModal" class="modal">
+          <span class="close">&times;</span>
+          <div class="modal-content">
+            <img id="modalImage" src="" alt="" />
+            <a class="prev" href="javascript:void(0)" onclick="changeImage(-1)"
+              >&#10094;</a
+            >
+            <a class="next" href="javascript:void(0)" onclick="changeImage(1)"
+              >&#10095;</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fim Projetos -->
 
     <!-- Experiência -->
     <section id="experiencia" class="experiencia">
@@ -296,89 +379,6 @@
       </div>
     </section>
     <!-- Fim experiência -->
-
-    <!-- Projetos -->
-    <section id="projetos" class="projetos">
-      <div class="container">
-        <div class="row">
-          <div class="introSobre">
-            <h1><strong>Projetos</strong></h1>
-            <img src="img/Divisoria.png" width="100" alt="divisória" />
-            <p>Clique na imagem para visualizar</p>
-          </div>
-          <div class="col-4">
-            <div class="card cardP">
-              <img
-                src="img/Portfolio-jonathas-abreu.PNG"
-                class="gallery-img"
-                alt="landing page jonathas abreu"
-                data-index="0"
-              />
-              <figcaption>Portfólio | Jonathas Abreu</figcaption>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card cardP">
-              <img
-                src="img/Landing-page-suaart-em-planejados.JPG"
-                class="gallery-img"
-                alt="landing page suaart"
-                data-index="1"
-              />
-              <figcaption>Landing page | SuaArt Em Planejados</figcaption>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card cardP">
-              <img
-                src="img/Calculadora-java-swing.JPG"
-                class="gallery-img"
-                alt="calculadora em java"
-                data-index="3"
-              />
-              <figcaption class="legend-img">
-                Calculadora Em Java Com Swing
-              </figcaption>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card cardP">
-              <img
-                src="img/Lista-de-tarefas.JPG"
-                class="gallery-img"
-                alt="lista de tarefas"
-                data-index="2"
-              />
-              <figcaption>Lista De Tarefas</figcaption>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card cardP">
-              <img
-                src="img/Sorteador-amigo-secreto.JPG"
-                class="gallery-img"
-                alt="sorteador smigo secreto"
-                data-index="4"
-              />
-              <figcaption>Sorteador Amigo Secreto</figcaption>
-            </div>
-          </div>
-        </div>
-        <div id="imageModal" class="modal">
-          <span class="close">&times;</span>
-          <div class="modal-content">
-            <img id="modalImage" src="" alt="" />
-            <a class="prev" href="javascript:void(0)" onclick="changeImage(-1)"
-              >&#10094;</a
-            >
-            <a class="next" href="javascript:void(0)" onclick="changeImage(1)"
-              >&#10095;</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Fim Projetos -->
 
     <!-- Idioma -->
     <section

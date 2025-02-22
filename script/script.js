@@ -41,52 +41,51 @@ document.querySelectorAll('.botaoMouse').forEach(function (botao) {
 
 
 
-// Variáveis globais
-let modal = document.getElementById("imageModal");
-let modalImage = document.getElementById("modalImage");
-let images = document.querySelectorAll(".gallery-img");
+// Selecionando os elementos do modal
+const modal = document.getElementById("imageModal");
+const modalImage = document.getElementById("modalImage");
+const images = document.querySelectorAll(".gallery-img");
+const closeButton = document.querySelector(".close");
+const prevButton = document.querySelector(".prev");
+const nextButton = document.querySelector(".next");
+
 let currentIndex = 0;
-let navbar = document.getElementById('main-nav');  // Seleciona a navbar
 
 // Função para abrir o modal e exibir a imagem clicada
 images.forEach((img, index) => {
     img.addEventListener("click", () => {
-        // Esconde a navbar ao abrir o modal
-        navbar.classList.add('hidden');  // Aplica a classe para esconder a navbar
-        
         modal.style.display = "block";
         modalImage.src = img.src;
-        currentIndex = index;  // Atualiza o índice da imagem clicada
+        currentIndex = index;
     });
 });
 
-// Função para fechar o modal ao clicar no "X"
-document.querySelector(".close").onclick = function() {
-    // Mostra a navbar novamente ao fechar o modal
-    navbar.classList.remove('hidden');  // Remove a classe para mostrar a navbar
-    
+// Função para fechar o modal ao clicar no botão de fechar
+closeButton.addEventListener("click", () => {
     modal.style.display = "none";
-};
+});
 
 // Função para navegar entre as imagens
 function changeImage(direction) {
     currentIndex += direction;
-    
-    // Garantir que o índice seja circular (loop infinito)
+
     if (currentIndex < 0) {
-        currentIndex = images.length - 1;  // Vai para a última imagem
+        currentIndex = images.length - 1; // Vai para a última imagem
     } else if (currentIndex >= images.length) {
-        currentIndex = 0;  // Vai para a primeira imagem
+        currentIndex = 0; // Volta para a primeira imagem
     }
 
-    modalImage.src = images[currentIndex].src;  // Atualiza a imagem no modal
+    modalImage.src = images[currentIndex].src;
 }
 
-// Fechar o modal clicando fora da imagem (ou no fundo escuro)
-window.onclick = function(event) {
+// Eventos de clique para os botões de navegação
+prevButton.addEventListener("click", () => changeImage(-1));
+nextButton.addEventListener("click", () => changeImage(1));
+
+// Fechar modal ao clicar fora da imagem
+window.addEventListener("click", (event) => {
     if (event.target === modal) {
-        // Mostra a navbar novamente
-        navbar.classList.remove('hidden');  // Remove a classe para mostrar a navbar
         modal.style.display = "none";
-    }}
+    }
+});
     
